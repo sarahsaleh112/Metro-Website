@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta http-equiv="refresh" content="43200" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Us</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/Imamu.png" alt="Logo" height="10%" width="10%" />
+
+      <nav>
+        <ul>
+          <li><a href="Welcome.html">Welcome</a></li>
+          <li><a href="signin.html">Sign In</a></li>
+          <li><a href="join.html">Join Us</a></li>
+          <li><a href="AboutUs.html">About Us</a></li>
+        </ul>
+      </nav>
+
+      <nav>
+        <ul>
+          <li class="dropdown">
+            <a href="#" class="contact-link">Contact Us</a>
+            <ul class="dropdown-menu">
+              <li><a href="mailto:contact@riyadhmetro.com">Email Us</a></li>
+              <li><a href="tel:+1234567890">Call Us</a></li>
+              <li><a href="https://X.com" target="_blank">X</a></li>
+              <li>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="background">
+      <div class="overlay">
+        <div class="form-box">
+          <h1>Join Us</h1>
+          <form action="register.php" method="POST" enctype="multipart/form-data">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="year">Year of Study:</label>
+            <select id="year" name="year" required>
+              <option value="">Select Year</option>
+              <option value="1st">1st Year</option>
+              <option value="2nd">2nd Year</option>
+              <option value="3rd">3rd Year</option>
+              <option value="4th">4th Year</option>
+            </select>
+
+            <label for="major">Major:</label>
+            <input type="text" id="major" name="major" required />
+
+            <label for="age">Age:</label>
+            <input
+              type="number"
+              id="age"
+              name="age"
+              required
+              min="18"
+              max="100"
+            />
+
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              required
+              min="6"
+              max="12"
+            /><br />
+            <label for="photo">Upload Photo:</label>
+<input type="file" id="photo" name="photo" accept="image/*" required >
+
+            <button type="Submit" class="btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024-25 / IMSIU / CCIS &TRADE;</p>
+    </footer>
+  </body>
+</html>

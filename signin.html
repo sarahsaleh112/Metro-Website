@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta http-equiv="refresh" content="43200">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/Imamu.png" alt="Logo" height="10%" width="10%">
+        <nav>
+            <ul>
+                <li><a href="Welcome.html">Welcome</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+                <li><a href="join.html">Join Us</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
+        <nav><ul>
+            <li class="dropdown">
+                <a href="#" class="contact-link">Contact Us</a>
+                <ul class="dropdown-menu">
+                    <li><a href="mailto:contact@riyadhmetro.com">Email Us</a></li>
+                    <li><a href="tel:+1234567890">Call Us</a></li>
+                    <li><a href="https://X.com" target="_blank">X</a></li>
+                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                </ul>
+            </li>
+        </ul></nav>
+    </header>
+
+    <div class="background">
+        <div class="overlay">
+            <div class="form-box">
+                <h1>Sign In</h1>
+                <form action="signin.php" method="POST">
+                    <label for="username">Name:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your name"><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password">
+                    <br><br>
+                    <button type="submit" class="btn">Sign In</button>
+                </form>
+                <br><br>
+                <p>Not registered? <a href="join.html">Register here</a></p><br><br>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024-25 / IMSIU / CCIS &TRADE;</p>
+    </footer>
+</body>
+</html>
